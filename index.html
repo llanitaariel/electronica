@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Control.com - Electronica</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -27,6 +27,7 @@
         text-decoration: none;
         color: #ffffff;
         font-size: small;
+        flex: 1;
       }
       .footer_links > a {
         border-left: 2px solid #e53e3e;
@@ -42,9 +43,37 @@
         width: 170px;
         cursor: pointer;
       }
+      .header_links > a {
+        color: black;
+        font-size: medium;
+      }
     </style>
   </head>
   <body>
+    <div
+      class="container"
+      style="display: flex; justify-content: space-between"
+    >
+      <div>
+        <a href="/">
+          <img
+            src="https://storage.mlcdn.com/account_image/1147844/ciMJhtZeKvDAIGBRXnVtazSFbZ6UBFSDQ6PCzmJf.png"
+            alt="Logo"
+            width="176px"
+          />
+        </a>
+      </div>
+
+      <div
+        class="header_links"
+        style="display: flex; align-items: center; gap: 20px"
+      >
+        <a href="#">Home</a>
+        <a href="#">Articles</a>
+        <a href="#">About</a>
+      </div>
+    </div>
+
     <div
       class="container"
       style="
@@ -223,11 +252,44 @@
           />
         </div>
 
-        <div class="footer_links" style="flex: 2; color: #ffffff; display: flex; align-items: flex-start;">
-          <a href="#"> CONNECT WITH US </a>
-          <a href="#"> CONTACT US </a>
-          <a href="#"> WRITE FOR US </a>
-          <a href="#"> ADVERTISE </a>
+        <div
+          style="
+            flex: 2;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+          "
+        >
+          <div class="footer_links" style="display: flex">
+            <a href="#"> CONNECT WITH US </a>
+            <a href="#"> CONTACT US </a>
+            <a href="#"> WRITE FOR US </a>
+            <a href="#"> ADVERTISE </a>
+          </div>
+
+          <div>
+            <a href="#" style="border: none" title="Facebook"
+              ><img
+                src="https://storage.mlcdn.com/account_image/1147844/toaUFWKVaYBbQJAxogRg1imQ77s3WoLh24Ekn80y.png"
+                alt=""
+            /></a>
+            <a href="#" style="border: none" title="X"
+              ><img
+                src="https://storage.mlcdn.com/account_image/1147844/VINAu0ROQYyNdeYgTPh9d5GEh7uoZOq97s9eHp8G.png"
+                alt=""
+            /></a>
+            <a href="#" style="border: none" title="LinkedIn"
+              ><img
+                src="https://storage.mlcdn.com/account_image/1147844/jaHusxHlLE0XrQaNiCjtzqQkmwRrWIWxEbN3RLzT.png"
+                alt=""
+            /></a>
+            <a href="#" style="border: none" title="YouTube"
+              ><img
+                src="https://storage.mlcdn.com/account_image/1147844/5yBoIYUhq9QyjEwDb7BSCw8AganP2YSRJ1Rx2TnR.png"
+                alt=""
+            /></a>
+          </div>
         </div>
       </div>
 
